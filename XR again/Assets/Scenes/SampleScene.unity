@@ -729,7 +729,7 @@ GameObject:
   - component: {fileID: 678333973}
   - component: {fileID: 678333972}
   m_Layer: 0
-  m_Name: Plane (2)
+  m_Name: Ceiling
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1620,7 +1620,7 @@ GameObject:
   - component: {fileID: 1618247517}
   - component: {fileID: 1618247516}
   m_Layer: 0
-  m_Name: Plane (5)
+  m_Name: Wall 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1668,7 +1668,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 777522fd1b00f214886181cd2c4db5c4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1726,7 +1726,7 @@ GameObject:
   - component: {fileID: 1694221349}
   - component: {fileID: 1694221348}
   m_Layer: 0
-  m_Name: Plane (3)
+  m_Name: Wall 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1774,7 +1774,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: c6589204f89ae604e943c5736762d3dc, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1832,7 +1832,7 @@ GameObject:
   - component: {fileID: 1699047975}
   - component: {fileID: 1699047974}
   m_Layer: 0
-  m_Name: Plane (4)
+  m_Name: Wall 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2044,7 +2044,7 @@ GameObject:
   - component: {fileID: 1805886180}
   - component: {fileID: 1805886179}
   m_Layer: 0
-  m_Name: Plane (1)
+  m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2150,7 +2150,7 @@ GameObject:
   - component: {fileID: 1814302626}
   - component: {fileID: 1814302625}
   m_Layer: 0
-  m_Name: Plane (6)
+  m_Name: Wall 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2198,7 +2198,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: fd658971e90bad54d86fb2957b3c9662, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2869,10 +2869,10 @@ SceneRoots:
   - {fileID: 832575519}
   - {fileID: 1805886182}
   - {fileID: 678333975}
-  - {fileID: 1694221351}
-  - {fileID: 1699047977}
   - {fileID: 1618247519}
+  - {fileID: 1694221351}
   - {fileID: 1814302628}
+  - {fileID: 1699047977}
   - {fileID: 286397861}
   - {fileID: 1465113165}
   - {fileID: 1535179140}
