@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 6e6d73ef16a553845ba3e52407c3a38b, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -1347,7 +1347,7 @@ GameObject:
   - component: {fileID: 1433396359}
   - component: {fileID: 1433396358}
   m_Layer: 0
-  m_Name: Sphere (1)
+  m_Name: Moon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1363,7 +1363,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 2, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1770899442}
@@ -1449,6 +1449,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1465113165}
   - component: {fileID: 1465113164}
+  - component: {fileID: 1465113166}
   m_Layer: 0
   m_Name: XR Origin (XR Rig)
   m_TagString: Untagged
@@ -1489,6 +1490,20 @@ Transform:
   - {fileID: 420478122}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1465113166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1465113163}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8068bb3f270f624d993ed8d457d5c2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1465113163}
+  action: {fileID: -631344258065148156, guid: e0ca4504471ca124088e1e2cfe6804ae, type: 3}
 --- !u!1 &1535179137
 GameObject:
   m_ObjectHideFlags: 0
@@ -1500,6 +1515,7 @@ GameObject:
   - component: {fileID: 1535179140}
   - component: {fileID: 1535179139}
   - component: {fileID: 1535179138}
+  - component: {fileID: 1535179141}
   m_Layer: 0
   m_Name: Point Light
   m_TagString: Untagged
@@ -1607,6 +1623,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1535179141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1535179137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 503d90b3c6fc6564da083078b6d0ae83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  light: {fileID: 1535179139}
+  action: {fileID: 5113088590926889233, guid: e0ca4504471ca124088e1e2cfe6804ae, type: 3}
 --- !u!1 &1618247515
 GameObject:
   m_ObjectHideFlags: 0
@@ -1880,7 +1910,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 5077ac669ff91e947966088146aa5b2c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1937,6 +1967,7 @@ GameObject:
   - component: {fileID: 1770899441}
   - component: {fileID: 1770899440}
   - component: {fileID: 1770899439}
+  - component: {fileID: 1770899443}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -2031,6 +2062,20 @@ Transform:
   - {fileID: 1433396357}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1770899443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1770899438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d7e127a72eed214d8c5d25cf5f9f499, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  planet: {fileID: 1770899438}
+  degreesPerSecond: 18
 --- !u!1 &1805886178
 GameObject:
   m_ObjectHideFlags: 0
@@ -2413,6 +2458,7 @@ GameObject:
   - component: {fileID: 2144359270}
   - component: {fileID: 2144359269}
   - component: {fileID: 2144359268}
+  - component: {fileID: 2144359273}
   m_Layer: 0
   m_Name: Right Controller
   m_TagString: Untagged
@@ -2862,6 +2908,19 @@ MonoBehaviour:
   m_MoveObjectOut: 15
   m_DirectionalAnchorRotation: 1
   m_PoseProvider: {fileID: 0}
+--- !u!114 &2144359273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2144359266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 047b23e555514c24e93389cd0b85e552, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  action: {fileID: 11711766586467970, guid: e0ca4504471ca124088e1e2cfe6804ae, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
