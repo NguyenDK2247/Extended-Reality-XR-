@@ -43,6 +43,7 @@ public class CustomGrab : MonoBehaviour
 
             if (grabbedObject)
             {
+                //grabbedObject.transform.rotation = Quaternion.Euler(Vector3.zero);
                 // Calculate delta position and rotation
                 Vector3 deltaPosition = transform.position - lastPosition;
                 Quaternion deltaRotation = Quaternion.Inverse(lastRotation) * transform.rotation;
@@ -61,11 +62,12 @@ public class CustomGrab : MonoBehaviour
         {
             grabbedObject = null;
         }
-
-        Vector3 directionVector = transform.position - playerCamera.position;
-        // Position the lens camera in front of the player's camera
-        Vector3 lensPosition = transform.position + directionVector;
-        transform.LookAt(lensPosition, transform.up);
+        
+        //Vector3 directionVector = transform.position - playerCamera.position;
+        //// Position the lens camera in front of the player's camera
+        //Vector3 lensPosition = transform.position + directionVector;
+        //transform.LookAt(lensPosition, transform.up);
+        
     }
 
     private void OnTriggerEnter(Collider other)

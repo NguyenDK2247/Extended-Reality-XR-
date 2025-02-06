@@ -264,6 +264,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerCamera: {fileID: 2006865230}
+  magnifyingGlass: {fileID: 1044548769}
 --- !u!1 &30426097
 GameObject:
   m_ObjectHideFlags: 0
@@ -1529,6 +1530,12 @@ CapsuleCollider:
   m_Height: 0.4
   m_Direction: 1
   m_Center: {x: -0.0016987845, y: 0.02, z: 0.0000014929101}
+--- !u!4 &1044548769 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 5dd37d4b7a1099245ac3a1e96cac9242,
+    type: 3}
+  m_PrefabInstance: {fileID: 1820879656}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1045840206
 GameObject:
   m_ObjectHideFlags: 0
@@ -2008,6 +2015,7 @@ MonoBehaviour:
   nearObjects: []
   grabbedObject: {fileID: 0}
   action: {fileID: 6986180202050166755, guid: e0ca4504471ca124088e1e2cfe6804ae, type: 3}
+  playerCamera: {fileID: 0}
 --- !u!1 &1053644648
 GameObject:
   m_ObjectHideFlags: 0
@@ -4094,6 +4102,7 @@ MonoBehaviour:
   nearObjects: []
   grabbedObject: {fileID: 0}
   action: {fileID: 6454596279149084813, guid: e0ca4504471ca124088e1e2cfe6804ae, type: 3}
+  playerCamera: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
